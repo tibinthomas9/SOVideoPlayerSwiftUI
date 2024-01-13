@@ -8,6 +8,7 @@
 import Foundation
 
 enum AppEndPoint: URLEndpoint {
+
     case videos
 }
 
@@ -15,9 +16,16 @@ extension AppEndPoint {
 
     var path: String {
         switch self {
-
         case .videos:
             return "/videos"
+        }
+    }
+
+    var port: Int {
+        switch self {
+
+        case .videos:
+            return 4000
         }
     }
 }
