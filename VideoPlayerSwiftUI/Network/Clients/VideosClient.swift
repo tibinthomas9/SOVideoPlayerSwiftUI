@@ -5,12 +5,6 @@
 //  Created by Tibin Thomas on 2024-01-12.
 //
 
-import Foundation
-
-protocol VideosService {
-    func getVideos() async throws -> [SOVideo]?
-}
-
 class VideosClient: VideosService {
     func getVideos() async throws -> [SOVideo]? {
         guard let url =  AppEndPoint.videos.url() else { return nil }

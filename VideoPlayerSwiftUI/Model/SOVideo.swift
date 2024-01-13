@@ -5,11 +5,14 @@
 //  Created by Tibin Thomas on 2024-01-12.
 //
 
-import Foundation
-
 // MARK: - Video
 
-struct SOVideo: Codable {
+struct SOVideo: Codable, Equatable {
+
+    static func == (lhs: SOVideo, rhs: SOVideo) -> Bool {
+        lhs.id == rhs.id
+    }
+
     let id: String
     let title: String
     let hlsURL: String
