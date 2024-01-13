@@ -34,7 +34,7 @@ class VideosListViewModel: ObservableObject {
     func getVideos() async {
         do {
             if let allVideos = try await client.getVideos() {
-                self.videos = allVideos.sorted { $0.publishedAt.toDate() ?? Date() < $1.publishedAt.toDate() ?? Date() }
+                self.videos = allVideos.sorted { $0.publishedAt.toSOVideoDate() ?? Date() < $1.publishedAt.toSOVideoDate() ?? Date() }
             }
             updateState()
         } catch {

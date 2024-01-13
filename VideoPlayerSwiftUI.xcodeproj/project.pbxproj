@@ -27,6 +27,7 @@
 		C2D791932B53120A00D844FE /* VideosListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D791922B53120A00D844FE /* VideosListView.swift */; };
 		C2D791962B5314D500D844FE /* MarkdownUI in Frameworks */ = {isa = PBXBuildFile; productRef = C2D791952B5314D500D844FE /* MarkdownUI */; };
 		C2D791992B53252C00D844FE /* SOPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D791982B53252C00D844FE /* SOPlayerView.swift */; };
+		C2D7919B2B533EB900D844FE /* VideosListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D7919A2B533EB900D844FE /* VideosListViewModelTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +73,7 @@
 		C2D791902B53076000D844FE /* StringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
 		C2D791922B53120A00D844FE /* VideosListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideosListView.swift; sourceTree = "<group>"; };
 		C2D791982B53252C00D844FE /* SOPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SOPlayerView.swift; sourceTree = "<group>"; };
+		C2D7919A2B533EB900D844FE /* VideosListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideosListViewModelTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +152,7 @@
 			isa = PBXGroup;
 			children = (
 				3AF67A6D25A64DBF00D360A7 /* VideoPlayerSwiftUITests.swift */,
+				C2D7919A2B533EB900D844FE /* VideosListViewModelTests.swift */,
 				C20EBD1C2B522E5300DC3AE5 /* EndPointTests.swift */,
 				C20EBD1E2B5230A000DC3AE5 /* VideosClientTests.swift */,
 				3AF67A6F25A64DBF00D360A7 /* Info.plist */,
@@ -422,6 +425,7 @@
 			files = (
 				C20EBD1F2B5230A000DC3AE5 /* VideosClientTests.swift in Sources */,
 				C20EBD1D2B522E5300DC3AE5 /* EndPointTests.swift in Sources */,
+				C2D7919B2B533EB900D844FE /* VideosListViewModelTests.swift in Sources */,
 				3AF67A6E25A64DBF00D360A7 /* VideoPlayerSwiftUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -615,7 +619,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = VideoPlayerSwiftUITests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -636,7 +640,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = VideoPlayerSwiftUITests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
