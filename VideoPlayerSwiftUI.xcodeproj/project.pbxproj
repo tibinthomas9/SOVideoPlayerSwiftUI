@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,12 @@
 		3AF67A6325A64DBF00D360A7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3AF67A6225A64DBF00D360A7 /* Preview Assets.xcassets */; };
 		3AF67A6E25A64DBF00D360A7 /* VideoPlayerSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF67A6D25A64DBF00D360A7 /* VideoPlayerSwiftUITests.swift */; };
 		3AF67A7925A64DBF00D360A7 /* VideoPlayerSwiftUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF67A7825A64DBF00D360A7 /* VideoPlayerSwiftUIUITests.swift */; };
+		C20EBD0F2B52226300DC3AE5 /* SOVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20EBD0E2B52226300DC3AE5 /* SOVideo.swift */; };
+		C20EBD112B52270700DC3AE5 /* HttpClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20EBD102B52270700DC3AE5 /* HttpClient.swift */; };
+		C20EBD132B52273400DC3AE5 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20EBD122B52273400DC3AE5 /* APIError.swift */; };
+		C20EBD162B5228E200DC3AE5 /* URLEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20EBD152B5228E200DC3AE5 /* URLEndPoint.swift */; };
+		C20EBD182B52291300DC3AE5 /* AppEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20EBD172B52291300DC3AE5 /* AppEndPoint.swift */; };
+		C20EBD1B2B522C5F00DC3AE5 /* VideosClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20EBD1A2B522C5F00DC3AE5 /* VideosClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +51,12 @@
 		3AF67A7425A64DBF00D360A7 /* VideoPlayerSwiftUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VideoPlayerSwiftUIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AF67A7825A64DBF00D360A7 /* VideoPlayerSwiftUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerSwiftUIUITests.swift; sourceTree = "<group>"; };
 		3AF67A7A25A64DBF00D360A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C20EBD0E2B52226300DC3AE5 /* SOVideo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SOVideo.swift; sourceTree = "<group>"; };
+		C20EBD102B52270700DC3AE5 /* HttpClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpClient.swift; sourceTree = "<group>"; };
+		C20EBD122B52273400DC3AE5 /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		C20EBD152B5228E200DC3AE5 /* URLEndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLEndPoint.swift; sourceTree = "<group>"; };
+		C20EBD172B52291300DC3AE5 /* AppEndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppEndPoint.swift; sourceTree = "<group>"; };
+		C20EBD1A2B522C5F00DC3AE5 /* VideosClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideosClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,12 +107,12 @@
 		3AF67A5A25A64DBD00D360A7 /* VideoPlayerSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				C20EBD072B5220E900DC3AE5 /* Model */,
+				C20EBD082B5220F600DC3AE5 /* View */,
+				C20EBD0B2B52212F00DC3AE5 /* ViewModel */,
 				C20EBD0D2B52217700DC3AE5 /* Extensions */,
 				C20EBD0C2B52214700DC3AE5 /* Service */,
-				C20EBD0B2B52212F00DC3AE5 /* ViewModel */,
 				C20EBD0A2B52211800DC3AE5 /* Network */,
-				C20EBD082B5220F600DC3AE5 /* View */,
-				C20EBD072B5220E900DC3AE5 /* Model */,
 				3AF67A5B25A64DBD00D360A7 /* VideoPlayerSwiftUIApp.swift */,
 				3AF67A5D25A64DBD00D360A7 /* ContentView.swift */,
 				3AF67A5F25A64DBF00D360A7 /* Assets.xcassets */,
@@ -139,6 +151,7 @@
 		C20EBD072B5220E900DC3AE5 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				C20EBD0E2B52226300DC3AE5 /* SOVideo.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -153,6 +166,10 @@
 		C20EBD0A2B52211800DC3AE5 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				C20EBD1A2B522C5F00DC3AE5 /* VideosClient.swift */,
+				C20EBD142B5228C700DC3AE5 /* EndPoint */,
+				C20EBD102B52270700DC3AE5 /* HttpClient.swift */,
+				C20EBD122B52273400DC3AE5 /* APIError.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -178,6 +195,15 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		C20EBD142B5228C700DC3AE5 /* EndPoint */ = {
+			isa = PBXGroup;
+			children = (
+				C20EBD152B5228E200DC3AE5 /* URLEndPoint.swift */,
+				C20EBD172B52291300DC3AE5 /* AppEndPoint.swift */,
+			);
+			path = EndPoint;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -186,6 +212,7 @@
 			buildConfigurationList = 3AF67A7D25A64DBF00D360A7 /* Build configuration list for PBXNativeTarget "VideoPlayerSwiftUI" */;
 			buildPhases = (
 				3AF67A5425A64DBD00D360A7 /* Sources */,
+				C20EBD192B522B3C00DC3AE5 /* ShellScript */,
 				3AF67A5525A64DBD00D360A7 /* Frameworks */,
 				3AF67A5625A64DBD00D360A7 /* Resources */,
 			);
@@ -302,12 +329,39 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		C20EBD192B522B3C00DC3AE5 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nif [[ \"$(uname -m)\" == arm64 ]]; then\n    export PATH=\"/opt/homebrew/bin:$PATH\"\nfi\n\nif which swiftlint > /dev/null; then\n  swiftlint --fix && swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3AF67A5425A64DBD00D360A7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C20EBD0F2B52226300DC3AE5 /* SOVideo.swift in Sources */,
+				C20EBD182B52291300DC3AE5 /* AppEndPoint.swift in Sources */,
 				3AF67A5E25A64DBD00D360A7 /* ContentView.swift in Sources */,
+				C20EBD112B52270700DC3AE5 /* HttpClient.swift in Sources */,
+				C20EBD132B52273400DC3AE5 /* APIError.swift in Sources */,
+				C20EBD162B5228E200DC3AE5 /* URLEndPoint.swift in Sources */,
+				C20EBD1B2B522C5F00DC3AE5 /* VideosClient.swift in Sources */,
 				3AF67A5C25A64DBD00D360A7 /* VideoPlayerSwiftUIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
